@@ -11,6 +11,7 @@ This is the archive branch of my dotfiles repo.
 - [Abricotine](#abricotine)
 - [Atom](#atom)
 - [Vivaldi](#vivaldi)
+- [zsh](#zsh)
 
 </details>
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -40,3 +41,6 @@ I wrote some styles to go along with Fang/Wave in [my stylesheet](atom/styles.le
 
 ## Vivaldi
 Vivaldi can use [custom CSS](vivaldi/common.css) with an [experimental toggle](https://forum.vivaldi.net/topic/37802/css-modifications-experimental-feature) which is nice, but it doesn't go so far as to be pywal-friendly without having to restart every time. Fortunately I can use [this script](scripts/vivwal) (by [wismut on vivaldi.net](https://forum.vivaldi.net/topic/34521/linux-changing-theme-via-command-line/22?_=1597433612704) and slightly modified by me) to set the theme colors through a remote Chromium console. It's pretty clever honestly. Vivaldi must be started with the command `vivaldi --remote-debugging-port=9222` for this to work.
+
+## [zsh](misc/.zshrc)
+Nothing special. Uses oh my zsh.
