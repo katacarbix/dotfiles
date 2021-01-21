@@ -1,20 +1,5 @@
-node_modules
-package-lock.json
-*.pyc
 *.cache
 
 atom/*
 !atom/config.cson
 !atom/styles.less
-
-ranger/*
-!ranger/rc.conf
-!ranger/rifle.conf
-!ranger/plugins
-
-fish/*
-!fish/config.fish
-!fish/functions/gg.fish
-
-micro/buffers
-micro/backups

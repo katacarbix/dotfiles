@@ -1,0 +1,176 @@
+/* Abricotine Wal Theme */
+
+// import wal colors
+@import '/home/reese/.cache/wal/colors.less';
+
+// USER INTERFACE
+// ==============
+
+// Main
+@ui-font-size: 14px;
+@ui-background-color: @background;
+
+// Pane
+@ui-pane-color: @foreground;
+@ui-pane-background-color: darken(@background, 3%);
+@ui-pane-border-color: darken(@background, 3%);
+.ui-pane-item() {
+}
+.ui-pane-item-hover() {
+	background: @background;
+	box-shadow: none;
+	text-shadow: none;
+}
+.ui-pane-item-active() {
+	background: @color1;
+	color: lighten(@foreground, 15%);
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+}
+
+// CodeMirror dialogs
+@ui-dialog-color: @ui-pane-color;
+@ui-dialog-background: @ui-pane-background-color;
+@ui-dialog-button-background: #181A1F;
+@ui-dialog-button-focus-background: #0e0f12;
+@ui-dialog-button-color: #b0bcd0;
+@ui-dialog-border-color: @ui-pane-border-color;
+
+// Scrollbars
+@ui-scrollbar-track-color: darken(@background, 3%);
+@ui-scrollbar-color: @color8;
+@ui-scrollbar-hover-color: @foreground;
+@ui-scrollbar-width: 10px;
+@ui-scrollbar-search-background: @color2;
+
+// EDITOR
+// ======
+
+// Text
+@editor-font-family: Hack, monospace;
+@editor-ligatures: true;
+@editor-text-color: @foreground;
+@editor-background-color: @background;
+
+// Headers
+.editor-headers() {
+	color: lighten(@foreground, 10%);
+	font-family: Roboto, sans-serif;
+}
+.editor-header-1() {
+	font-size: 300%;
+}
+.editor-header-2() {
+	font-size: 220%;
+}
+.editor-header-3() {
+	font-size: 180%;
+}
+.editor-header-4() {
+	font-size: 150%;
+}
+.editor-header-5() {
+	font-size: 130%;
+}
+.editor-header-6() {
+	font-size: 110%;
+}
+
+// Code
+@editor-code-font-family: Hack, monospace;
+
+.editor-code() {
+	color: @color5;
+	font-weight: bold;
+	background: lighten(@background, 5%);
+}
+
+// Quote
+.editor-quote() {
+	color: darken(@foreground, 15%);
+}
+
+// List
+@editor-list-padding-left: 0;
+@editor-list-checked-color: @color4;
+.editor-list() {
+	color: auto;
+}
+.editor-list-checked() {
+	text-decoration: line-through;
+}
+
+// Horizontal rule
+.editor-hr() {
+	color: @color8;
+}
+
+// Image
+.editor-image() {
+	color: #D09965;
+}
+
+// Link and URL
+.editor-link() {
+	color: @color5;
+}
+.editor-link-href() {
+	color: darken(@foreground, 15%);
+}
+
+// Text formating
+.editor-em() {};
+.editor-strong() {};
+.editor-strikethrough() {};
+
+// Formatting marks and hidden characters
+@editor-formatting-color: @color1;
+@editor-hidden-characters-color: darken(@foreground, 15%);
+
+// Cursors and selections
+@editor-cursor-color: @color1;
+@editor-cursor-width: 2px;
+.editor-selection() {
+	background-color: lighten(@background, 10%);
+}
+.editor-searching() {
+	background: transparent;
+	padding: 1px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+
+// Show blocks option
+@editor-block-margin-color: desaturate(lighten(@background, 10%), 10%);
+@editor-block-margin-size: 5px;
+
+// Errors
+@error-color: #c00;
+@error-color-contrast: #eee;
+
+// CodeMirror code highlighting
+@cm-atom-color: #e1c76e;
+@cm-attribute-color: #b9ca4a;
+@cm-builtin-color: #214e7b;
+@cm-bracket-color: #cc7;
+@cm-comment-color: #97a3aa;
+@cm-def-color: #b9ca4a;
+@cm-header-color: #6a0d6a;
+@cm-hr-color: #888;
+@cm-keyword-color: #eee;
+@cm-link-color: #e1c76e;
+@cm-meta-color: #555;
+@cm-node-color: #e8e8e8;
+@cm-number-color: #6cb5d9;
+@cm-operator-color: #9179bb;
+@cm-property-color: #eee;
+@cm-punctuation-color: auto;
+@cm-qualifier-color: #555;
+@cm-quote-color: #186718;
+@cm-string-color: #b9ca4a;
+@cm-string-2-color: #6cb5d9;
+@cm-tag-color: #e8e8e8;
+@cm-variable-color: #6cb5d9;
+@cm-variable-2-color: #cc1e5c;
+@cm-variable-3-color: #f9602c;
+@cm-negative-color: #d44;
+@cm-positive-color: #292;

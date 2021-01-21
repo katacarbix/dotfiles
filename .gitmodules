@@ -1,9 +1,0 @@
-[submodule "micro/plug/editorconfig"]
-	path = micro/plug/editorconfig
-	url = https://github.com/10sr/editorconfig-micro
-[submodule "ranger/plugins/ranger-autojump"]
-	path = ranger/plugins/ranger-autojump
-	url = https://github.com/fdw/ranger-autojump.git
-[submodule "afetch"]
-	path = afetch
-	url = git@github.com:katacarbix/afetch.git

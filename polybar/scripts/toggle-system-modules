@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-modules=(weather cpu memory temperature network publicip)
-for mod in "${modules[@]}"; do
-	polybar-msg cmd toggle.$mod
-done

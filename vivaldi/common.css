@@ -1,0 +1,28 @@
+#browser.linux,
+#browser.linux + div,
+#browser.linux + div + div,
+#browser.linux button,
+#browser.linux input,
+#browser.linux select,
+#browser.linux textarea {
+	font-family: Roboto, Arial, system-ui, sans-serif;
+	font-size: 15px;
+}
+.tab-position .tab {
+	font-size: 13.1px;
+}
+
+/* hide ring around favicon */
+.theme-dark .tab-position .tab.active .tab-header .favicon {
+	filter: none;
+}
+
+/* fix toolbar height */
+.toolbar-mainbar {
+    padding-bottom: 1px;
+}
+
+/* border at bottom of toolbar */
+.address-top .toolbar-mainbar:after {
+	display: none;
+}

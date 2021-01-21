@@ -1,9 +1,0 @@
-bass
-bobthefish
-colorman
-default
-fish-spec
-node
-nvm
-omf
-virtualfish
